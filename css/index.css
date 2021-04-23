@@ -3,6 +3,17 @@
   height: 50px;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas:
+    "navigation navigation"
+    "heroImage heroBio"
+    "footer footer";
+  padding: 10px;
+}
+
 .logo {
   justify-content: center;
   align-items: center;
@@ -16,16 +27,42 @@
   justify-content: space-between;
   color: white;
   background-color: black;
+  grid-area: navigation;
+}
+
+.heroBio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: heroBio;
+  background-color: black;
+  color: white;
+}
+
+.heroImage {
+  display: flex;
+  grid-area: heroImage;
+  align-items: center;
+  background-color: black;
+}
+
+.footer {
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+  grid-area: footer;
+  border-top: 1px solid white;
 }
 
 .navigationLeft {
-  height: 59px;
   display: flex;
   justify-content: flex-start;
 }
 
 .navigationRight {
-  height: 59px;
   display: flex;
   justify-content: flex-end;
 }
@@ -80,17 +117,11 @@ a:hover {
   align-items: center;
 }
 
-.heroSection {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  background-color: black;
-  padding-left: 20px;
-}
-
 .heroImage img {
-  width: 660px;
-  height: 100%;
+  max-width: 100%;
+  margin-left: 10px;
+  min-height: 80%;
+  padding-left: 10px;
 }
 
 .heroBio {
@@ -130,14 +161,6 @@ button {
 button:hover {
   background-color: #f88410;
   font-weight: 800;
-}
-
-.footer {
-  height: 59px;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  background-color: black;
 }
 
 .footerLeft {
