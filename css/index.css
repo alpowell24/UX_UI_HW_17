@@ -120,7 +120,7 @@ a:hover {
 .heroImage img {
   max-width: 100%;
   margin-left: 10px;
-  min-height: 80%;
+  min-height: 100%;
   padding-left: 10px;
 }
 
