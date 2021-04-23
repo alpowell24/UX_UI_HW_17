@@ -48,6 +48,11 @@ nav {
 
 .social img {
   padding: 10px;
+  transition: all;
+}
+
+.social img:hover {
+  transform: translate(0px, -1.2px);
 }
 
 h1 {
@@ -61,6 +66,12 @@ nav a {
   padding: 36px;
   font-size: 24px;
   font-family: Interstate;
+  transition: color ease;
+}
+
+a:hover {
+  color: #f9a756;
+  font-weight: 500;
 }
 
 .websiteName {
@@ -74,6 +85,8 @@ nav a {
   justify-content: space-between;
   color: white;
   background-color: black;
+  padding-left: 20px;
+  max-height: 600px;
 }
 
 .heroImage img {
@@ -81,14 +94,12 @@ nav a {
   height: 100%;
 }
 
-.heroImage {
-}
-
 .heroBio {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-height: 600px;
 }
 
 .heroBio p {
@@ -100,10 +111,12 @@ nav a {
   padding-left: 20px;
   padding-right: 20px;
   width: 85%;
+  max-width: 85%;
 }
 
 button {
   height: 60px;
+  min-height: 60px;
   width: 200px;
   background-color: #f9a756;
   border-radius: 10px;
@@ -112,6 +125,13 @@ button {
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 37px;
+  transition: background-color 0.5s ease;
+  border: 0;
+}
+
+button:hover {
+  background-color: #f88410;
+  font-weight: 800;
 }
 
 .footer {
